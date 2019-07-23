@@ -27,3 +27,4 @@ def arm_and_takeoff(altitude)
     vehicle.armed = True
 
     while not vehicle.armed: time.sleep(1)
+        
