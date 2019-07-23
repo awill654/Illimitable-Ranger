@@ -1,3 +1,10 @@
+
+
+ 
+
+    
+
+
 import time
 from dronekit import connect, VehicleMode, LocationGlobalRelative, Command, LocationGlobal
 from pymavlink import mavutil
@@ -53,7 +60,9 @@ def arm_and_takeoff(altitude)
 
 def set_velocity_body(vehicle, vx, vy, vz):
 
+    """ Remember: vz is positive downward!!!
 
+    http://ardupilot.org/dev/docs/copter-commands-in-guided-mode.html
 
     
 
